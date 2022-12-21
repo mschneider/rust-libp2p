@@ -20,5 +20,3 @@
 
 //! Rust-libp2p Tutorials to get started with.
 
-pub mod hole_punching;
-pub mod ping;
