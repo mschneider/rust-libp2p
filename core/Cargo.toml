@@ -13,7 +13,7 @@ categories = ["network-programming", "asynchronous"]
 [dependencies]
 asn1_der = "0.7.4"
 bs58 = "0.4.0"
-ed25519-dalek = "1.0.1"
+ed25519-dalek = "1"
 either = "1.5"
 fnv = "1.0"
 futures = { version = "0.3.1", features = ["executor", "thread-pool"] }
@@ -31,7 +31,7 @@ prost = "0.11"
 once_cell = "1.16.0"
 rand = "0.8"
 rw-stream-sink = { version = "0.3.0", path = "../misc/rw-stream-sink" }
-sec1 = { version = "0.3.0", features = ["std"] } # Activate `std` feature until https://github.com/RustCrypto/traits/pull/1131 is released.
+sec1 = { version = "0.2", features = ["alloc", "std"] } # Activate `std` feature until https://github.com/RustCrypto/traits/pull/1131 is released.
 serde = { version = "1", optional = true, features = ["derive"] }
 sha2 = "0.10.0"
 smallvec = "1.6.1"
