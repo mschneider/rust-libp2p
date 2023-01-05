@@ -141,9 +141,6 @@ mod transport_ext;
 
 pub mod bandwidth;
 
-#[cfg(doc)]
-pub mod tutorials;
-
 pub use self::core::{
     identity,
     transport::TransportError,
