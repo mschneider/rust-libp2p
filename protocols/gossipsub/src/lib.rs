@@ -150,7 +150,7 @@ pub mod metrics;
 mod peer_score;
 pub mod subscription_filter;
 pub mod time_cache;
-mod topic;
+pub mod topic;
 mod transform;
 mod types;
 
