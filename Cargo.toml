@@ -136,6 +136,9 @@ env_logger = "0.10.0"
 clap = { version = "4.0.13", features = ["derive"] }
 tokio = { version = "1.15", features = ["io-util", "io-std", "macros", "rt", "rt-multi-thread"] }
 
+crossbeam-channel = "0.5"
+rand = "0.7.0"
+
 libp2p-mplex = { path = "muxers/mplex" }
 libp2p-noise = { path = "transports/noise" }
 libp2p-tcp = { path = "transports/tcp", features = ["tokio"] }
