@@ -387,7 +387,7 @@ where
         for connection in self
             .pending
             .iter_mut()
-            .filter_map(|(_, info)| info.is_for_same_remote_as(peer).then_some(info))
+            .filter_map(|(_, info)| if info.is_for_same_remote_as(peer) { Some(info) } else { None })
         {
             connection.abort()
         }
